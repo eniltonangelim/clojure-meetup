@@ -17,6 +17,29 @@
   [request]
   (ring-resp/response "Hello World!"))
 
+;; Armazena a sessao do cliente usando Atom
+(def ws-clients (atom {}))
+
+(defn meetup-ws-client
+  "Mantem todas as sessoes dos clientes"
+  [ws-session send-ch]
+  (async/put! send-ch "Bem vindo!")
+  (swap! ws-clients assoc ws-session send-ch))
+
+(def meetup-ws-paths
+  {"/chat" {
+    :on-connect (ws/start-ws-connection meetup-ws-client)
+    :on-text (fn [msg] 
+               (log/info :msg (str "Client: " msg)))
+    :on-binary (fn [payload offset length] 
+                 (log/info :msg "Binary Message!" :bytes payload))
+    :on-error (fn [t] 
+                (log/error :msg "WS Error happened" :exception t))
+    :on-close (fn [num-code reason-text] 
+                (log/infp :msg "WS Closed:" :reason reason-text))
+  }})
+
+
 (defn meetup-sse
   "Inicia com o contador de eventos"
   [event-ch context]
@@ -97,5 +120,7 @@
                                         ;:keystore "test/hp/keystore.jks"
                                         ;:key-password "password"
                                         ;:ssl-port 8443
-                                        :ssl? false}})
+                                        :ssl? false
+                                        :context-configurator 
+                                          #(ws/add-ws-endpoints % meet-ws-paths)}})
 
