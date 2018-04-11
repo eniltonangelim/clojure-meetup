@@ -13,15 +13,6 @@
 (def ws-clients (atom {}))
 (def ws-clients-messages (atom {:qtd 0}))
 
-(defn send-and-close!
-  [message]
-    (let [[ws-session send-ch] (first @ws-clients)]
-      (async/put! send-ch message)
-      (async/close! send-ch)
-      (swap! ws-clients dissoc ws-session)
-      (log/info :msg 
-        (str "Active Connections: " (count @ws-clients)))))
-
 (defn send-message-to-all!
   [message]
     (doseq 
