@@ -5,35 +5,54 @@
             [io.pedestal.http.jetty.websockets :as ws]
             [io.pedestal.http.body-params :as body-params]
             [ring.util.response :as ring-resp]
-            [clojure.core.async :as async]))
+            [io.pedestal.log :as log]
+            [clojure.core.async :as async]
+            [clojure.java.jmx :as jmx]))
 
-(defn about-page
-  [request]
-  (ring-resp/response (format "Clojure %s - served from %s"
-                              (clojure-version)
-                              (route/url-for ::about-page))))
+;; Armazena a sessao do cliente usando Atom
+(def ws-clients (atom {}))
+(def ws-clients-messages (atom {:qtd 0}))
 
-(defn home-page
-  [request]
-  (ring-resp/response "Hello World!"))
+(defn send-message-to-all!
+  [message]
+    (doseq 
+      [[^org.eclipse.jetty.websocket.api.Session session channel] @ws-clients]
+        (when (.isOpen session)
+          (async/put! channel message))))
+
+(defn meetup-ws-client
+  "Mantem todas as sessoes dos clientes"
+  [ws-session send-ch]
+    (async/put! send-ch "Bem vindo!")
+    (swap! ws-clients assoc ws-session send-ch))
+
+(def meetup-ws-paths
+  {"/chat" {
+    :on-connect (ws/start-ws-connection meetup-ws-client)
+    :on-text (fn [msg] 
+               (log/info :msg (str "Client: " msg))
+               (swap! ws-clients-messages update :qtd inc)
+               (send-message-to-all! msg))
+    :on-error (fn [t] 
+                (log/error :msg "WS Error happened" :exception t))
+    :on-close (fn [num-code reason-text] 
+                (log/info :msg "WS Closed:" :reason reason-text))
+  }})
 
 (defn meetup-sse
-  "Inicia com o contador de eventos"
   [event-ch context]
-  (let [count-num (Integer/parseInt
-                    (or (-> (context :request)
-                          :query-params :counter) "10"))]
-    (loop [counter count-num]
+    (loop []
       (async/put!
-        event-ch {:name "count"
-                  :data (str counter ", T: "
-                          (.getId (Thread/currentThread)))})
-      (Thread/sleep 2000)
-      (if (> counter 1)
-        (recur (dec counter))
-        (do
-          (async/put! event-ch {:name "close" :data "I am done!"}))))))
-
+        event-ch {:name "Status chat"
+                  :data 
+                    {:message (str "Quantidade de mensagens "
+                               (get @ws-clients-messages :qtd))
+                     :client (str "Quantidade de clientes " 
+                               (count @ws-clients))
+                     :server-memory (jmx/read "java.lang:type=Memory" 
+                                      [:HeapMemoryUsage])}})
+      (Thread/sleep 5000)
+      (recur)))
 
 ;; Defines "/" and "/about" routes with their associated :get handlers.
 ;; The interceptors defined after the verb map (e.g., {:get home-page}
@@ -41,9 +60,7 @@
 (def common-interceptors [(body-params/body-params) http/html-body])
 
 ;; Tabular routes
-(def routes #{["/" :get (conj common-interceptors `home-page)]
-              ["/about" :get (conj common-interceptors `about-page)]
-              ["/events" :get [(sse/start-event-stream meetup-sse)]]})
+(def routes #{["/events" :get [(sse/start-event-stream meetup-sse)]]})
 
 ;; Map-based routes
 ;(def routes `{"/" {:interceptors [(body-params/body-params) http/html-body]
@@ -97,5 +114,7 @@
                                         ;:keystore "test/hp/keystore.jks"
                                         ;:key-password "password"
                                         ;:ssl-port 8443
-                                        :ssl? false}})
+                                        :ssl? false
+                                        :context-configurator 
+                                          #(ws/add-ws-endpoints % meetup-ws-paths)}})
 

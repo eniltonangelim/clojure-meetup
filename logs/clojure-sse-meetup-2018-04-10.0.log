@@ -1,0 +1,437 @@
+17:23:38.453 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7518ms to org.eclipse.jetty.util.log.Slf4jLog
+17:23:38.731 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+17:23:38.859 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@283eb984{/,null,AVAILABLE}
+17:23:38.939 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@42e7e12f{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+17:23:38.940 [main] INFO  org.eclipse.jetty.server.Server - Started @8006ms
+17:33:25.182 [qtp1976110789-33] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 34}
+17:34:06.385 [qtp1976110789-37] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 34}
+17:36:35.279 [qtp1976110789-34] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 34}
+17:38:02.306 [qtp1976110789-40] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 34}
+17:42:58.356 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7489ms to org.eclipse.jetty.util.log.Slf4jLog
+17:42:58.560 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+17:42:58.614 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@283eb984{/,null,AVAILABLE}
+17:42:58.630 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@42e7e12f{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+17:42:58.630 [main] INFO  org.eclipse.jetty.server.Server - Started @7765ms
+17:43:25.071 [qtp1976110789-23] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 50}
+17:48:25.085 [Scheduler-905933622] ERROR clojure-sse-meetup.service - {:msg "WS Error happened", :line 55}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+17:48:25.112 [Scheduler-905933622] INFO  clojure-sse-meetup.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 57}
+18:32:23.242 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @10706ms to org.eclipse.jetty.util.log.Slf4jLog
+18:32:23.425 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+18:32:23.478 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b47178c{/,null,AVAILABLE}
+18:32:23.493 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@411e5672{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+18:32:23.494 [main] INFO  org.eclipse.jetty.server.Server - Started @10960ms
+18:32:33.393 [qtp34545190-23] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 50}
+18:33:16.712 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7540ms to org.eclipse.jetty.util.log.Slf4jLog
+18:33:16.911 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+18:33:16.963 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4aebd384{/,null,AVAILABLE}
+18:33:16.979 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@227ca700{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+18:33:16.979 [main] INFO  org.eclipse.jetty.server.Server - Started @7810ms
+18:33:34.622 [qtp1333507457-23] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 50}
+18:38:34.646 [Scheduler-1365833373] ERROR clojure-sse-meetup.service - {:msg "WS Error happened", :line 55}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+18:38:34.655 [Scheduler-1365833373] INFO  clojure-sse-meetup.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 57}
+18:58:08.813 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7370ms to org.eclipse.jetty.util.log.Slf4jLog
+18:58:08.990 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+18:58:09.041 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@37c5e2e6{/,null,AVAILABLE}
+18:58:09.057 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@70bca957{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+18:58:09.057 [main] INFO  org.eclipse.jetty.server.Server - Started @7617ms
+18:58:30.345 [qtp554226947-23] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 40}
+19:00:46.424 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7629ms to org.eclipse.jetty.util.log.Slf4jLog
+19:00:46.596 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:00:46.649 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@37c5e2e6{/,null,AVAILABLE}
+19:00:46.668 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@70bca957{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:00:46.669 [main] INFO  org.eclipse.jetty.server.Server - Started @7875ms
+19:00:55.618 [qtp554226947-23] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 40}
+19:05:55.629 [Scheduler-1641589131] ERROR clojure-sse-meetup.service - {:msg "WS Error happened", :line 43}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19:05:55.641 [Scheduler-1641589131] INFO  clojure-sse-meetup.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 45}
+19:06:10.993 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @8152ms to org.eclipse.jetty.util.log.Slf4jLog
+19:06:11.164 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:06:11.209 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@37c5e2e6{/,null,AVAILABLE}
+19:06:11.225 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@70bca957{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:06:11.225 [main] INFO  org.eclipse.jetty.server.Server - Started @8387ms
+19:06:16.187 [qtp554226947-25] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:06:16.227 [qtp554226947-25] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:06:16.239 [qtp554226947-25] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:06:56.255 [async-dispatch-4] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x31f60133 "clojure.core.async.impl.channels.ManyToManyChannel@31f60133"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:747)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:518)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:677)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:728)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:234)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:218)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:392)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeNoArgInstanceMember(Reflector.java:313)
+	at io.pedestal.http.impl.servlet_interceptor$eval13592$fn__13593$fn__13704$state_machine__5770__auto____13713$fn__13716.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval13592$fn__13593$fn__13704$state_machine__5770__auto____13713.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:972)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:977)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5786.invoke(ioc_macros.clj:986)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__641$fn__642.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Pipe quebrado
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:270)
+	... 31 common frames omitted
+19:07:06.246 [async-dispatch-6] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending heartbeat. Shutting down SSE stream.", :line 142}
+19:10:39.920 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7576ms to org.eclipse.jetty.util.log.Slf4jLog
+19:10:40.098 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:10:40.151 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2620d0dc{/,null,AVAILABLE}
+19:10:40.165 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@4e4d6172{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:10:40.166 [main] INFO  org.eclipse.jetty.server.Server - Started @7825ms
+19:10:44.005 [qtp1672376369-25] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:10:44.010 [qtp1672376369-25] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:10:44.021 [qtp1672376369-25] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:13:23.826 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @8578ms to org.eclipse.jetty.util.log.Slf4jLog
+19:13:24.030 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:13:24.087 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@18f90bd8{/,null,AVAILABLE}
+19:13:24.105 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@6b4d0be2{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:13:24.106 [main] INFO  org.eclipse.jetty.server.Server - Started @8860ms
+19:13:28.264 [qtp1044566009-25] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:13:28.271 [qtp1044566009-25] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:13:28.286 [qtp1044566009-25] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:14:05.463 [qtp1044566009-13] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 40}
+19:15:44.175 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @8109ms to org.eclipse.jetty.util.log.Slf4jLog
+19:15:44.368 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:15:44.417 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e2c701{/,null,AVAILABLE}
+19:15:44.433 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5e324000{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:15:44.434 [main] INFO  org.eclipse.jetty.server.Server - Started @8370ms
+19:15:50.176 [qtp1672063869-25] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:15:50.181 [qtp1672063869-25] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:15:50.195 [qtp1672063869-25] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:21:11.303 [Scheduler-1930846401] ERROR clojure-sse-meetup.service - {:msg "WS Error happened", :line 43}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19:21:11.314 [Scheduler-1930846401] INFO  clojure-sse-meetup.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 45}
+19:21:39.298 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7462ms to org.eclipse.jetty.util.log.Slf4jLog
+19:21:39.469 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:21:39.516 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1ff9d66b{/,null,AVAILABLE}
+19:21:39.534 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3c3f0f2e{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:21:39.535 [main] INFO  org.eclipse.jetty.server.Server - Started @7701ms
+19:21:52.259 [qtp428450115-26] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:21:52.264 [qtp428450115-26] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:21:52.276 [qtp428450115-26] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:25:14.332 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7324ms to org.eclipse.jetty.util.log.Slf4jLog
+19:25:14.676 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:25:14.761 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@711329fe{/,null,AVAILABLE}
+19:25:14.788 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@78c0fad6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:25:14.793 [main] INFO  org.eclipse.jetty.server.Server - Started @7789ms
+19:25:19.352 [qtp1535333469-23] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:25:19.357 [qtp1535333469-23] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:25:19.369 [qtp1535333469-23] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:26:25.203 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7244ms to org.eclipse.jetty.util.log.Slf4jLog
+19:26:25.370 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:26:25.417 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1ff9d66b{/,null,AVAILABLE}
+19:26:25.432 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3c3f0f2e{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:26:25.433 [main] INFO  org.eclipse.jetty.server.Server - Started @7476ms
+19:26:51.540 [qtp428450115-26] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:26:51.547 [qtp428450115-26] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:26:51.562 [qtp428450115-26] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:27:09.320 [qtp428450115-13] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 41}
+19:27:13.368 [qtp428450115-26] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 41}
+19:27:17.733 [qtp428450115-15] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 41}
+19:32:17.742 [Scheduler-1672063869] ERROR clojure-sse-meetup.service - {:msg "WS Error happened", :line 45}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19:32:17.756 [Scheduler-1672063869] INFO  clojure-sse-meetup.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 47}
+19:35:19.400 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @8241ms to org.eclipse.jetty.util.log.Slf4jLog
+19:35:19.582 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:35:19.639 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1f94df5{/,null,AVAILABLE}
+19:35:19.655 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@370bd951{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:35:19.656 [main] INFO  org.eclipse.jetty.server.Server - Started @8499ms
+19:35:22.645 [qtp216833827-25] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:35:22.650 [qtp216833827-25] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:35:22.662 [qtp216833827-25] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:35:52.133 [qtp216833827-13] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:39:13.256 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @9436ms to org.eclipse.jetty.util.log.Slf4jLog
+19:39:13.495 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:39:13.568 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@74947f2b{/,null,AVAILABLE}
+19:39:13.590 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1a2d02d8{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:39:13.590 [main] INFO  org.eclipse.jetty.server.Server - Started @9772ms
+19:39:17.943 [qtp1356644874-25] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:39:17.948 [qtp1356644874-25] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:39:17.962 [qtp1356644874-25] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:39:54.407 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @9234ms to org.eclipse.jetty.util.log.Slf4jLog
+19:39:54.640 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:39:54.716 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1f94df5{/,null,AVAILABLE}
+19:39:54.741 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@370bd951{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:39:54.742 [main] INFO  org.eclipse.jetty.server.Server - Started @9572ms
+19:39:59.344 [qtp216833827-25] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:39:59.349 [qtp216833827-25] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:39:59.365 [qtp216833827-25] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:41:14.924 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @11111ms to org.eclipse.jetty.util.log.Slf4jLog
+19:41:15.772 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:41:16.030 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@edf68f5{/,null,AVAILABLE}
+19:41:16.113 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7324d83{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:41:16.119 [main] INFO  org.eclipse.jetty.server.Server - Started @12314ms
+19:41:20.058 [qtp441365303-25] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:41:20.064 [qtp441365303-25] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:41:20.079 [qtp441365303-25] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:42:33.295 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @17850ms to org.eclipse.jetty.util.log.Slf4jLog
+19:42:33.553 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+19:42:33.634 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6d0e242f{/,null,AVAILABLE}
+19:42:33.653 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@6705b98b{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+19:42:33.654 [main] INFO  org.eclipse.jetty.server.Server - Started @18212ms
+19:43:57.223 [qtp932747764-27] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:43:57.243 [qtp932747764-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:43:57.300 [qtp932747764-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:44:58.883 [qtp932747764-13] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:45:00.083 [qtp932747764-27] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:45:06.031 [qtp932747764-38] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:45:09.013 [qtp932747764-27] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:45:09.417 [qtp932747764-13] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:45:09.800 [qtp932747764-27] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:45:10.120 [qtp932747764-13] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:45:10.451 [qtp932747764-27] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:45:10.800 [qtp932747764-38] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:45:11.166 [qtp932747764-27] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:47:04.007 [qtp932747764-27] INFO  clojure-sse-meetup.service - {:msg "Client: Hello", :line 42}
+19:47:37.239 [qtp932747764-27] INFO  clojure-sse-meetup.service - {:msg "Client: Cliente 2: Olá, tem alguem ai?", :line 42}
+19:48:09.872 [qtp932747764-13] INFO  clojure-sse-meetup.service - {:msg "Client: Cliente 1: OI, tem sim!", :line 42}
+19:50:00.228 [qtp932747764-41] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:50:00.228 [qtp932747764-41] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:50:00.232 [qtp932747764-41] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:50:06.643 [qtp932747764-17] INFO  io.pedestal.http - {:msg "GET /events", :line 80}
+19:50:06.643 [qtp932747764-17] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+19:50:06.646 [qtp932747764-17] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, Access-Control-Allow-Origin, X-Xss-Protection, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Access-Control-Allow-Credentials, Cache-Control, X-Content-Type-Options, Content-Security-Policy, Content-Type, Connection"}, :line 111}
+19:50:15.246 [async-dispatch-4] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x292b3b2b "clojure.core.async.impl.channels.ManyToManyChannel@292b3b2b"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:747)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:518)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:677)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:728)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:234)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:218)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:392)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1122)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeNoArgInstanceMember(Reflector.java:313)
+	at io.pedestal.http.impl.servlet_interceptor$eval13592$fn__13593$fn__13704$state_machine__5770__auto____13713$fn__13716.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval13592$fn__13593$fn__13704$state_machine__5770__auto____13713.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:972)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:977)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5786.invoke(ioc_macros.clj:986)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__641$fn__642.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Pipe quebrado
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:270)
+	... 30 common frames omitted
+19:50:20.236 [async-dispatch-2] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending event. Shutting down SSE stream.", :line 154}
+19:50:21.649 [async-dispatch-4] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x76027ffe "clojure.core.async.impl.channels.ManyToManyChannel@76027ffe"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:747)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:518)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:677)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:728)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:234)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:218)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:392)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1122)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeNoArgInstanceMember(Reflector.java:313)
+	at io.pedestal.http.impl.servlet_interceptor$eval13592$fn__13593$fn__13704$state_machine__5770__auto____13713$fn__13716.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval13592$fn__13593$fn__13704$state_machine__5770__auto____13713.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:972)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:977)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5786.invoke(ioc_macros.clj:986)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__641$fn__642.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Pipe quebrado
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:270)
+	... 30 common frames omitted
+19:50:26.648 [async-dispatch-8] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending event. Shutting down SSE stream.", :line 154}
+19:50:59.729 [qtp932747764-39] INFO  clojure-sse-meetup.service - {:msg "WS Closed:", :reason nil, :line 48}
+19:53:09.877 [Scheduler-441365303] ERROR clojure-sse-meetup.service - {:msg "WS Error happened", :line 46}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19:53:09.882 [Scheduler-441365303] INFO  clojure-sse-meetup.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 48}
+19:59:57.441 [async-dispatch-5] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x47f1728e "clojure.core.async.impl.channels.ManyToManyChannel@47f1728e"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:747)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:518)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:677)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:728)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:234)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:218)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:392)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1122)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at clojure.lang.Reflector.invokeMatchingMethod(Reflector.java:93)
+	at clojure.lang.Reflector.invokeNoArgInstanceMember(Reflector.java:313)
+	at io.pedestal.http.impl.servlet_interceptor$eval13592$fn__13593$fn__13704$state_machine__5770__auto____13713$fn__13716.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval13592$fn__13593$fn__13704$state_machine__5770__auto____13713.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:973)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:972)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:977)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:975)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5786.invoke(ioc_macros.clj:986)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__641$fn__642.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Pipe quebrado
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:270)
+	... 30 common frames omitted
+20:00:02.441 [async-dispatch-7] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending event. Shutting down SSE stream.", :line 154}
